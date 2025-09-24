@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form id="frm1" method="post" action ="/SERVLET_PROJECT/jkl">
+		    
+			<input class ="al1" type="text" name="msg" placeholder="서버로 전송할 메세지를 입력하세요"><br>
+			<input type="button" id="btn1" value="Input Button"><br>
+			<input type="submit" value="Input Submit"><br>
+			<button>Button Tag</button>				
+		</form>
+
+		<script>
+			document.querySelector('#btn1').addEventListener('click', function(){
+				document.querySelector('#frm1').submit();
+			})
+
+			
+/*			
+			document.getElementById('btn1').addEventListener('click', function(){
+				document.getElementById('frm1').submit();
+			})
+*/			
+/*
+			let inputArr = document.getElementsByTagName('input')
+//			console.log(inputArr[1])
+			inputArr[1].addEventListener('click', function(){
+//				console.log(this);
+			let formArr = document.getElementsByTagName('form')
+			formArr[0].submit()
+			});
+*/
+		</script>
+	</body>
+</html>
