@@ -12,6 +12,10 @@
 	String releaseComp = request.getParameter("releaseComp");
 	String releaseDate = request.getParameter("releaseDate");
 	
+	if (null==title){
+		throw new Exception("속이 뻥~~~~");
+	}	
+	
 	Map<String, String> musicMap = new HashMap<String,String>();
 	musicMap.put("title", title);
 	musicMap.put("vocal", vocal);
